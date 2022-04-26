@@ -30,10 +30,9 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul>
+						<ul> 
 							<li><a href="#problem statement" class="active">Problem statement</a></li>
 							<li><a href="#objectives">Objectives</a></li>
-							<li><a href="#Added value">Added value</a></li>
 							<li><a href="#proposed methodology">Proposed methodology</a></li>
 							<li><a href="#plan">plan</a></li>
 						</ul>
@@ -48,22 +47,33 @@
 					<header class="major">
 						<h2>Problem statement</h2>
 						<p>
-						The unemployed are defined as people without work but actively seeking employment and currently available to start work.
-						we see that unemployment rate world wide (the percentage of unemployed 25-64 year-olds among 25-64 year-olds in the labor force)
-						is inversely correlated to the education level, which makes sense, the higher your educational level the more your chances are to be employed, right ?!
+							unemployment is a serious problem that society suffers from, it has costs to a society that are more than just financial. 
+							Even though unemployment is caused by various reasons coming from both the demand side (employers) and the supply side (workers) we are 
+							going to investigate its relationship with educational levels both worldwide and in Algeria.
 						</p>
 					</header>
+					<blockquote>
+						<b>Unemployment</b> is a term referring to individuals who are employable and actively seeking a job but are unable to find one.
+					</blockquote>
 
-					<iframe  src="assets/graphs/ww_unemployment.html" style="height: 40em;width: 60em"></iframe> 
+					<iframe  src="assets/graphs/ww_unemployment.html" style="height: 40em;width: 60em"></iframe>
+
+					<header class="major">
+					<p>
+						Readers with keen eyes will notice from the chart above that unemployment rate worldwide is inversely correlated to educational level, 
+						which makes sense, the higher your educational level the more your chances are to be employed, right ?!
+					</p>
+					</header> 
 
 					<blockquote>
 					Eurostat commenting on this chart : “As such, it would appear that apprenticeships and other kinds of education programs that equip students with the knowledge, know-how, 
 					skills and/or competences required for a particular occupation increase the likelihood of recent graduates being able to find a job.”
 					</blockquote>
 
+
 					<header class="major">
 					<p>
-					however, data from 2019 shows that the unemployment rate world wide is pretty different than it is in Algeria (surprise surprise !).
+					However, data from 2019 shows that the unemployment rate worldwide is pretty different than it is in Algeria (surprise surprise !).
 					In 2019, the unemployment rate among people with higher education in Algeria corresponded to 17.4% percent. This educational level presented the highest unemployment rate in the country. 
 					On the contrary, only three percent of the people in the labor force who did not pursue any educational degree were unemployed. Indeed, in that year, better-educated people were less likely to be employed in the country.
 					(Published by <a href="https://www.statista.com/aboutus/our-research-commitment"> Statista Research Department</a>, Nov 29, 2021)
@@ -73,15 +83,18 @@
 					<iframe  src="assets/graphs/alg_unemployment.html" style="height: 40em;width: 60em"></iframe> 
 					<header class="major">
 					<p>
-					this effect may be due to many factors ( the employment market in Algeria, lack of open positions so on so forth), 
-					but the issue that we aim to address here is what we believe to be a solid reason for this. 
+						This anomaly may be due to many factors (high interest rates, global recession, financial crisis and so on). 
+						another factor which is generally overlooked and we believe to be a solid point is that; graduated student often go <b>unprepared</b> to the professional world, 
+						<b>lacking insights</b> about available companies in their fields,
+						and having little to <b>no information</b> about the <b>competition</b> and <b>market requirements</b>, which greatly affect their ability to find jobs and compete in the market.
+					</p>
+					</header>
+				</section>
 
-  					we believe that graduated student often go unprepared to the professional world, 
-					lacking insights about available companies in their fields, and having little to no information about the competition and market requirements.<br />
-					<br />
-					<b>
+				<section class="main special">
+					<header class="major">
+					<p>
 						our hypothsis is the following :
-					</b>
 					</p>
 				    </header>
 
@@ -95,22 +108,16 @@
 					<header class="major">
 
 						<h2>Objectives</h2>
-						<p><b>Insights</b><br />
-						as we presented earlier <b>problem statement</b>, graduates have little to no information about the 
-						available companies in their field, the properties of each company, how likely this company is going to hire, <br />
-						what are the best options available in the market, and how much one should be paid for a role or another.
-						</p>
-						<p>
-						<b>Objectives</b><br/>
-						we want is create an end to end BI tool that would help graduate student gain insights about the hiring market, <br/>
-						and help them reach data driven decision and answer the following questions :
+						in this project we aim to create an end to end BI tool that would help graduated students gain insights about the hiring market, <br/>
+						and enable them of making data driven decisions for that regard, and answer their questions :
 						</p>
 
 						<ul class="alt">
-							<li>is this company suitable for me ?</li>
-							<li>who are its competitors ?</li>
-							<li>what are the chances of me being hired ?</li>
-							<li>how much should I be paid for this role ?</li>
+							<li>What companies out there are working in my domain ? </li>
+							<li>Is this company suitable for me ?</li>
+							<li>Who are its competitors ?</li>
+							<li>What are the chances of me being hired ?</li>
+							<li>How much should I be paid for this role ?</li>
 						</ul>
 					</header>
 					</section>
@@ -120,12 +127,13 @@
 						<section class="main special">
 						<header class="major">
 							<p>
-								<b>Deliverables</b><br/>
-								for this we plan on meeting the following deliverables :
+								for a starting point our tool will contain the following 2 modules : 
 							</p>
 
-							<p><b>1.</b> a dashboard enabling the comparison between different companies in each industry, 
-							this dashboard will visualize growth metrics and other performance indexes of each company.</p>
+							<p><b>1.</b> A dashboard enabling the comparison between different companies in each industry, 
+							this dashboard will visualize growth metrics and other performance indexes of each company.<br/>
+							With this dashboard the user can identify the top tier companies in each domain, and find suitable ones for future employment.
+							</p>
 
 							<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsvtXfz87scEDCutHmwORpQ%2FDashboard%3Fnode-id%3D584%253A31" allowfullscreen></iframe>
 						</header>
@@ -135,8 +143,9 @@
 					<section class="main special">
 						<header class="major">
 
-						<p><b>2.</b> scrapping tool able to fetch contacts on linkedin of people working in a company of interest.</p>
-
+						<p><b>2.</b>  Scraping tool able to fetch contacts on linkedin of people working in a company of interest,
+							 with this the user will be able to expand his or her network and increase the chances of being presented with opportunities from these contacts
+						</p>
 						<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsvtXfz87scEDCutHmwORpQ%2FDashboard%3Fnode-id%3D597%253A2" allowfullscreen></iframe>
 					</header>
 					</section>
@@ -144,21 +153,20 @@
 					
 				
 
-				<!-- Added value -->
-				<section id="Added value" class="main special">
-					<header class="major">
-						<h2>Added value</h2>
-						<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-						posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-					</header>
-				</section>
-
 				<!-- proposed methodology -->
 				<section id="proposed methodology" class="main special">
 					<header class="major">
 						<h2>Proposed methodology</h2>
-						<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-						posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+						<ul class="alt">
+							<li>Data collection : we will implement 2 scrapping scripts, one that will scrap data from 
+								<a href="https://craft.co/search?layout=list&order=relevance&q=">craft.co</a> and the other will scrap contacts from <a href="https://www.linkedin.com/">linkedin</a>
+								these scripts will be wrote in python using the <code>selenium</code> library.</li>
+							<li>Data storage and pipelines : data about companies and contacts will be stored in csv files, additional pipeline will be added to enable searching for new companies (new domains), 
+								which will will execute the scrapping scripts and update the csv files. (we use pandas to write and read csv files)</li>
+							<li>Data preparation : data cleaning and removing outliers + ETL + feature engineering for insights. </li>
+							<li>Data visualization and dashboard : we want our dashboards to be interactive and friendly to the eyes, for this we will use <code>plotly</code> and implement our dashboards as a 
+								web interface using <code>html</code>, <code>js</code> and <code>css</code></li>
+						</ul>
 					</header>
 				</section>
 
@@ -166,14 +174,12 @@
 				<section id="plan" class="main special">
 					<header class="major">
 						<h2>Our plan</h2>
-						<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-						posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+						<div id="chart_div"></div>
 					</header>
 				</section>
 
 				<div style="height: max-content;"><script src="https://gist.github.com/1hachem/9cb18d980d39951b107fcab1f978461f.js"></script></div>
 				
-
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -199,5 +205,51 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['gantt']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function daysToMilliseconds(days) {
+      return days * 24 * 60 * 60 * 1000;
+    }
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Task ID');
+      data.addColumn('string', 'Task Name');
+      data.addColumn('date', 'Start Date');
+      data.addColumn('date', 'End Date');
+      data.addColumn('number', 'Duration');
+      data.addColumn('number', 'Percent Complete');
+      data.addColumn('string', 'Dependencies');
+
+      data.addRows([
+	    ['proposition', 'proposition report',
+		 new Date(2022, 4, 20), new Date(2022, 4, 27),null, 100, null],
+        ['collection', 'Data collection',
+		new Date(2022, 4, 27), new Date(2022, 4, 30), null,  10,  null],
+        ['storage', 'Data storage & pipelines',
+         null, new Date(2022, 5, 2), daysToMilliseconds(3), 0, 'collection'],
+        ['preparation', 'Data preparation',
+         null, new Date(2022, 5, 4), daysToMilliseconds(2), 0, 'storage'],
+        ['dashboard', 'Visualization and dashboard',
+         null, new Date(2022, 5, 7), daysToMilliseconds(5), 0, 'collection'],
+        ['report', 'Final report',
+		new Date(2022, 4, 30), new Date(2022, 5, 10), daysToMilliseconds(8), 0, null]
+      ]);
+
+      var options = {
+        height: 275
+      };
+
+      var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+
 	</body>
 </html>
+
