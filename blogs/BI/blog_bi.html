@@ -131,23 +131,22 @@
 								for a starting point our tool will contain the following 2 modules : 
 							</p>
 
-							<p><b>1.</b> A dashboard enabling the comparison between different companies in each industry, 
-							this dashboard will visualize growth metrics and other performance indexes of each company.<br/>
-							With this dashboard the user can identify the top tier companies in each domain, and find suitable ones for future employment.
-							</p>
+							<p><b>1.</b>  Scraping tool able to fetch contacts on linkedin of people working in a company of interest,
+								with this the user will be able to expand his or her network and increase the chances of being presented with opportunities from these contacts
+						   </p>
 
-							<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsvtXfz87scEDCutHmwORpQ%2FDashboard%3Fnode-id%3D584%253A31" allowfullscreen></iframe>
+							<!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsvtXfz87scEDCutHmwORpQ%2FDashboard%3Fnode-id%3D584%253A31" allowfullscreen></iframe> -->
 						</header>
 						</section>
 					
 
 					<section class="main special">
 						<header class="major">
-
-						<p><b>2.</b>  Scraping tool able to fetch contacts on linkedin of people working in a company of interest,
-							 with this the user will be able to expand his or her network and increase the chances of being presented with opportunities from these contacts
-						</p>
-						<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsvtXfz87scEDCutHmwORpQ%2FDashboard%3Fnode-id%3D597%253A2" allowfullscreen></iframe>
+							<p><b>2.</b> A dashboard enabling the comparison between different companies in each industry, 
+								this dashboard will visualize growth metrics and other performance indexes of each company.<br/>
+								With this dashboard the user can identify the top tier companies in each domain, and find suitable ones for future employment.
+								</p>
+						<!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsvtXfz87scEDCutHmwORpQ%2FDashboard%3Fnode-id%3D597%253A2" allowfullscreen></iframe> -->
 					</header>
 					</section>
 
@@ -161,7 +160,7 @@
 						<ul class="alt">
 							<li>Data collection : we will implement 2 scrapping scripts, one that will scrap data from 
 								<a href="https://craft.co/search?layout=list&order=relevance&q=">craft.co</a> and the other will scrap contacts from <a href="https://www.linkedin.com/">linkedin</a>
-								these scripts will be wrote in python using the <code>selenium</code> library.</li>
+								these scripts will be wrote in python using <code>selenium</code> and <code>beautifulsoup</code>libraries.</li>
 							<li>Data storage and pipelines : data about companies and contacts will be stored in csv files, additional pipeline will be added to enable searching for new companies (new domains), 
 								which will will execute the scrapping scripts and update the csv files. (we use pandas to write and read csv files)</li>
 							<li>Data preparation : data cleaning and removing outliers + ETL + feature engineering for insights. </li>
@@ -243,17 +242,17 @@
 
       data.addRows([
 	    ['proposition', 'Proposition report',
-		 new Date(2022, 4, 20), new Date(2022, 4, 27),null, 100, null],
+		 new Date(2022, 3, 20), new Date(2022, 3, 27),null, 100, null],
         ['collection', 'Data collection',
-		new Date(2022, 4, 27), new Date(2022, 4, 30), null, 100,  null],
+		new Date(2022, 3, 27), new Date(2022, 3, 30), null, 100,  null],
         ['storage', 'Data storage & pipelines',
-         null, new Date(2022, 5, 2), daysToMilliseconds(3), 100, 'collection'],
+         null, new Date(2022, 4, 2), daysToMilliseconds(3), 100, 'collection'],
         ['preparation', 'Data preparation',
-         null, new Date(2022, 5, 4), daysToMilliseconds(5), 100, 'storage'],
+         null, new Date(2022, 4, 3), daysToMilliseconds(4), 100, 'storage'],
         ['dashboard', 'Visualization and dashboard',
-         null, new Date(2022, 5, 7), daysToMilliseconds(5), 0, 'collection'],
+         null, new Date(2022, 4, 7), daysToMilliseconds(4), 0, 'collection'],
         ['report', 'Final report',
-		new Date(2022, 5, 5), new Date(2022, 5, 10), daysToMilliseconds(8), 0, null]
+		new Date(2022, 4, 4), new Date(2022, 4, 10), daysToMilliseconds(8), 0, null]
       ]);
 
       var options = {
